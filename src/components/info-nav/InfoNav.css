@@ -1,0 +1,16 @@
+.navbar-toggler {
+    border: none; /* Remove default border */
+    outline: none; /* Remove outline */
+  }
+  
+  /* Style for the custom icon */
+  .fa-pizza-slice {
+    color: #ff9900; /* Bright color */
+    font-size: 30px; /* Larger size */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .fa-pizza-slice:hover {
+    transform: rotate(180deg); /* Rotate icon on hover */
+  }
+  

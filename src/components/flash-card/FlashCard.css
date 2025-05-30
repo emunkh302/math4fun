@@ -1,0 +1,82 @@
+.card {
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: white;
+    font-family: 'Baloo', cursive;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #ff758c;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #ff7eb3;
+}
+.card-title {
+    font-size: 2em; /* Larger font size for the question */
+    margin-bottom: 20px; /* More space below the question */
+}
+
+.btn-primary {
+    font-size: 1.5em; /* Larger font size for buttons */
+    padding: 10px 20px; /* More padding for larger touch targets */
+    margin: 5px; /* Adjust margin as needed */
+    border-radius: 15px; /* Rounded corners for a softer look */
+}
+
+/* Optional: Add a hover effect for buttons */
+.btn-primary:hover {
+    background-color: #ff92ae;
+}
+
+/* The spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* The spinner styling */
+.spinner {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+}
+
+.spinner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid blue;
+    border-radius: 50%;
+    width: 100%; /* Full size of the parent */
+    height: 100%; /* Full size of the parent */
+    animation: spin 5s linear infinite;
+}
+
+/* The timer text styling */
+.timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-weight: bold;
+    font-size: 28px; /* Adjust size as needed */
+    z-index: 2;
+    
+}

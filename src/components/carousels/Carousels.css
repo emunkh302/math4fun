@@ -1,0 +1,39 @@
+.carousel-text, .carousel-title {
+    margin: 10px 0; /* Adds space between the h3 and p tags */
+}
+
+.carousel-title {
+    color: #ff8c00; /* Bold orange color */
+    font-weight: bold; /* Makes the text bold */
+    font-size: 24px; /* Larger font size for emphasis */
+    text-shadow:
+        2px 2px 0 black,   /* Top right */
+        -2px -2px 0 black, /* Bottom left */
+        2px -2px 0 black,  /* Top left */
+        -2px 2px 0 black,  /* Bottom right */
+        2px 0 0 black,     /* Right */
+        -2px 0 0 black,    /* Left */
+        0 2px 0 black,     /* Bottom */
+        0 -2px 0 black;    /* Top */
+}
+
+.carousel-text {
+    color: #ffcc99; /* Lighter shade of orange */
+    font-size: 18px; /* Slightly smaller font size than h3 */
+    text-shadow:
+        2px 2px 0 black,   /* Top right */
+        -2px -2px 0 black, /* Bottom left */
+        2px -2px 0 black,  /* Top left */
+        -2px 2px 0 black,  /* Bottom right */
+        2px 0 0 black,     /* Right */
+        -2px 0 0 black,    /* Left */
+        0 2px 0 black,     /* Bottom */
+        0 -2px 0 black;    /* Top */
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel-container .carousel-item img {
+      display: none !important;
+    }
+  }
+  

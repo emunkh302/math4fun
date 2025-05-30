@@ -1,0 +1,24 @@
+.top-left-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap between items as needed */
+}
+
+@media (max-width: 768px) {
+  .top-left-controls {
+    justify-content: center;
+  }
+}
+
+/* Ensure the .top-left-controls is not affected by absolute positioning of .card-top-left */
+.card-top-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+.form-check-container {
+  display: flex;
+  align-items: center; /* Vertically align items in the middle */
+  gap: 5px; /* Adjust the gap between the checkbox and the text */
+}

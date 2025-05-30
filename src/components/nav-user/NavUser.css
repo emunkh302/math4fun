@@ -1,0 +1,19 @@
+.navbar-toggler {
+    background-color: #ffd700; /* Bright color for the button */
+    border: none; /* Remove border */
+  }
+  
+  .navbar-toggler:hover {
+    background-color: #ffcc00; /* Slightly different color on hover */
+  }
+  
+  .navbar-toggler-icon {
+    color: white; /* Text color */
+    font-size: 1.2em; /* Larger text */
+  }
+  .logo-pill {
+    border-radius: 15px; /* Half of the width and height to create a pill shape */
+    /* Add any additional styling as needed */
+  }
+  
+  

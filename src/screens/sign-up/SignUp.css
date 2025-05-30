@@ -1,0 +1,15 @@
+/* SignUp.css */
+.signup-container {
+    width: 90%;
+    max-width: 500px; /* You can adjust this for larger screens */
+    margin: 0 auto; /* This centers the div */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  @media (min-width: 768px) {
+    .signup-container {
+      /* Adjust styles for larger screens if needed */
+    }
+  }
+  

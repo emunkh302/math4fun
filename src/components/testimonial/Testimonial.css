@@ -1,0 +1,21 @@
+
+.testimonial-card {
+    background-color: #fff59d; /* Light yellow background */
+    border-radius: 15px; /* Rounded corners */
+    color: #6a1b9a; /* Deep purple text */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Fun, child-friendly font */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 20px;
+}
+
+.math-icon {
+    font-size: 2rem; /* Larger icon size */
+    color: #ff8a65; /* Soft orange color */
+    margin-bottom: 10px;
+}
+
+.math-quote {
+    font-size: 1.2rem; /* Larger text for easy readability */
+}

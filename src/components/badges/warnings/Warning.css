@@ -1,0 +1,32 @@
+/* Badge styling for pop-up alerts */
+.popUpBadge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the badge */
+  z-index: 99; /* Ensure it appears above other elements */
+  background-color: #ffc107; /* Bright background color */
+  color: #fff; /* White text for contrast */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px 20px; /* Some padding */
+  font-size: 1.2rem; /* Larger text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.popUpBadge::before {
+  content: '🌟'; /* Star emoji before the text */
+  margin-right: 5px;
+}
+/* Animation for pop-up badge */
+@keyframes popUpAndOut {
+  0%, 100% {
+    transform: scale(1) translate(-50%, -50%);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5) translate(-50%, -50%);
+  }
+}
+
+.popUpAndOut {
+  animation: popUpAndOut 1s ease-in-out;
+}
