@@ -106,6 +106,7 @@ const MultiplicationGame = () => {
       setCorrectCount(0); 
       // Timer will pause due to showAlert, question resets when alert is closed
     }
+    // eslint-disable-next-line
   }, [correctCount, stars, diamonds, emeralds, gems, resetTimerAndQuestion]);
 
   const handleAlertClose = () => {

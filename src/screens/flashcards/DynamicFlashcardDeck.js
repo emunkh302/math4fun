@@ -1,5 +1,5 @@
 // src/screens/flashcards/DynamicFlashcardDeck.js
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import FlippingFlashCard from '../../components/flash-card/FlippingFlashCard'; // Adjust path
 import { generateProblem } from '../../utils/mathLogic'; // We'll use this for Q&A
 import { FaArrowLeft, FaArrowRight, FaRandom, FaCog, FaPlay } from 'react-icons/fa';
