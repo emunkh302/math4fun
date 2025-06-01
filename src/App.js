@@ -6,7 +6,6 @@ import { UserContext } from './contexts/user-context/UserContext';
 import AppNavbar from './components/Navbar'; // Your Navbar
 import SignUpScreen from './screens/sign-up/SignUp';
 import LoginScreen from './screens/login/Login';
-// import GamePage from './screens/game/GamePage'; // GamePage is now part of MainDashboard
 import MainDashboard from './screens/dashboard/MainDashboard'; // <<< IMPORT NEW DASHBOARD
 import UserHistory from './screens/history/UserHistory'; 
 

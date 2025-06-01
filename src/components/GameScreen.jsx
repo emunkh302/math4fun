@@ -1,7 +1,7 @@
 // src/components/GameScreen.jsx
 import React, { useState, useEffect, useCallback } from 'react'; // Ensure useCallback is imported
 import { generateProblem } from '../utils/mathLogic';
-import { FaCheckCircle, FaTimesCircle, FaHourglassHalf, FaThumbsUp, FaSadTear, FaRedo, FaPaperPlane } from 'react-icons/fa';
+import {  FaHourglassHalf, FaRedo, FaPaperPlane } from 'react-icons/fa';
 
 const GameScreen = ({ settings, onGameEnd }) => {
   // userAnswers will be an object: { problemId: "userEnteredValue", ... }
@@ -119,7 +119,7 @@ const GameScreen = ({ settings, onGameEnd }) => {
             </button>
         </div>
       </div>
-      {/* Problems List */}
+      
       {/* Problems List */}
       <div className="space-y-5 max-h-[60vh] overflow-y-auto pr-2">
         {problems.map((p, index) => (

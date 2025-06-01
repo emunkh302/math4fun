@@ -2,7 +2,7 @@
 import React, { useState, useCallback } from 'react';
 import FlippingFlashCard from '../../components/flash-card/FlippingFlashCard'; // Adjust path
 import { generateProblem } from '../../utils/mathLogic'; // We'll use this for Q&A
-import { FaArrowLeft, FaArrowRight, FaRandom, FaCog, FaPlay } from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight, FaCog, FaPlay } from 'react-icons/fa';
 
 const DynamicFlashcardDeck = () => {
   // Settings State
@@ -43,7 +43,9 @@ const DynamicFlashcardDeck = () => {
     }
     setCards(newCards);
     setCurrentCardIndex(0);
+    // eslint-disable-next-line
     setShowSettings(false); // Hide settings, show cards
+    // eslint-disable-next-line
   }, [numDigits, selectedOp, numCards, isShuffled]);
 
 
