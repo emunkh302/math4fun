@@ -52,7 +52,7 @@ const GamePage = () => {
       };
       try {
         await saveState(newStateForStatistic, userState.token);
-        console.log("Quiz result saved successfully using StatisticContext!");
+        // console.log("Quiz result saved successfully using StatisticContext!");
       } catch (error) {
         console.error("Error saving quiz result via StatisticContext:", error);
       }

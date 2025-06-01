@@ -2,10 +2,6 @@
 import React, { useState } from 'react';
 // import { useAuth } from '../contexts/AuthContext'; // Assuming you have an AuthContext for user info
 
-// Using a simple text/emoji for icon to avoid SVG issues for now, replace as needed
-const MathIconPlaceholder = () => <span className="text-5xl sm:text-6xl" role="img" aria-label="calculator">🧮</span>;
-
-
 const GameSettings = ({ onStartGame }) => {
   // const { currentUser } = useAuth();
 
@@ -35,18 +31,17 @@ const GameSettings = ({ onStartGame }) => {
   const operations = [
     { symbol: '+', label: 'Addition' },
     { symbol: '-', label: 'Subtraction' },
-    { symbol: '*', label: 'Multiplication' },
-    { symbol: '/', label: 'Division' }
+    { symbol: 'x', label: 'Multiplication' },
+    { symbol: '÷', label: 'Division' }
   ];
 
   return (
     <div className="max-w-xl mx-auto p-6 sm:p-8 bg-white bg-opacity-95 rounded-xl shadow-2xl space-y-6 sm:space-y-8">
       <div className="text-center">
         <div className="flex justify-center mb-4">
-          <MathIconPlaceholder />
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold text-blue-600" style={{ fontFamily: "'Comic Sans MS', 'Chalkboard SE', cursive" }}>
-          Math Adventure Setup!
+          Math is FUN!
         </h1>
         <p className="text-gray-600 mt-2 text-sm sm:text-base">
           Customize your math challenge!
@@ -56,9 +51,7 @@ const GameSettings = ({ onStartGame }) => {
       <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
         {/* Number of Digits */}
         <div>
-          <label htmlFor="num-digits" className="block text-base sm:text-lg font-medium text-gray-700 mb-1">
-            Number of Digits <span className="text-sm text-gray-500">(for each number)</span>
-          </label>
+         
           <select
             id="num-digits"
             value={numDigits}
@@ -73,9 +66,7 @@ const GameSettings = ({ onStartGame }) => {
 
         {/* Operations - Changed to Radio Buttons */}
         <div>
-          <label className="block text-base sm:text-lg font-medium text-gray-700 mb-2">
-            Choose One Operation
-          </label>
+          
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {operations.map(op => (
               <label
@@ -134,7 +125,7 @@ const GameSettings = ({ onStartGame }) => {
           type="submit"
           className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-xl text-lg sm:text-xl shadow-lg hover:shadow-xl transition duration-150 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75"
         >
-          🚀 Start the Adventure!
+          🚀 Let The Fun
         </button>
       </form>
     </div>

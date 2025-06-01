@@ -37,11 +37,11 @@ const StatisticStore = ({ children }) => {
     const queryUrl = `https://math4jem-default-rtdb.firebaseio.com/states.json?auth=${token}&orderBy="userId"&equalTo="${userId}"`;
 
 
-    console.log("Fetching from URL (using fetch):", queryUrl);
+    // console.log("Fetching from URL (using fetch):", queryUrl);
 
     try {
       const response = await fetch(queryUrl);
-      console.log("Fetch response status:", response.status, response.statusText);
+      // console.log("Fetch response status:", response.status, response.statusText);
 
       if (!response.ok) {
         // Try to get error message from response if possible
@@ -57,7 +57,7 @@ const StatisticStore = ({ children }) => {
       }
 
       const fetchedData = await response.json();
-      console.log("Fetched data (using fetch):", fetchedData);
+      // console.log("Fetched data (using fetch):", fetchedData);
 
       const statesArray = fetchedData
         ? Object.keys(fetchedData)

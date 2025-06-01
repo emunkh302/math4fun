@@ -16,9 +16,21 @@ const AppNavbar = () => {
   return (
     <BootstrapNavbar bg="primary" variant="dark" expand="lg" className="mb-4 shadow">
       <Container>
-        <BootstrapNavbar.Brand as={Link} to={userState.token ? "/game" : "/login"} style={{fontFamily: "'Comic Sans MS', 'Chalkboard SE', cursive", fontSize: '1.5rem'}}>
-          Math Adventures
-        </BootstrapNavbar.Brand>
+      <BootstrapNavbar.Brand
+  as={Link}
+  to="/game"
+  style={{
+    fontFamily: "'Comic Sans MS', 'Chalkboard SE', cursive",
+    fontSize: '1.5rem'
+  }}
+>
+  <img 
+    src="/favicon.ico" 
+    alt="Math is FUN!" 
+    className="h-12 sm:h-16" 
+  />
+</BootstrapNavbar.Brand>
+
         <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
         <BootstrapNavbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
@@ -26,8 +38,8 @@ const AppNavbar = () => {
               <>
                 {/* You can display user email or name if available */}
                 {/* <Nav.Link disabled className="text-light me-2">Hi, {userState.displayName || 'User'}</Nav.Link> */}
-                <Nav.Link as={Link} to="/game" className="text-light">Play Game</Nav.Link>
-                <Nav.Link as={Link} to="/history" className="text-light">My Progress</Nav.Link> {/* <<<< THIS LINE IS NOW ACTIVE */}
+                <Nav.Link as={Link} to="/game" className="text-light">Games</Nav.Link>
+                <Nav.Link as={Link} to="/history" className="text-light">Results</Nav.Link> {/* <<<< THIS LINE IS NOW ACTIVE */}
                 <Button variant="outline-light" onClick={handleLogout} className="ms-lg-2 mt-2 mt-lg-0">Logout</Button>
               </>
             ) : (

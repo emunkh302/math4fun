@@ -139,7 +139,7 @@ const UserHistory = () => {
     <div className="w-full max-w-2xl lg:max-w-3xl mx-auto p-6 bg-white bg-opacity-95 rounded-xl shadow-2xl">
       <div className="flex justify-between items-center mb-6 pb-4 border-b">
         <h1 className="text-2xl sm:text-3xl font-bold text-blue-600" style={{ fontFamily: "'Comic Sans MS', 'Chalkboard SE', cursive" }}>
-          My Game History
+          History
         </h1>
         <Link
             to="/game"

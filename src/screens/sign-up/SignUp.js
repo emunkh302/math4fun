@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../../contexts/user-context/UserContext';
 import { InputGroup, FormControl, Button, Alert } from 'react-bootstrap';
 import './SignUp.css';
-import InfoNav from '../../components/info-nav/InfoNav';
 
 const SignUp = () => {
   const emailRef = useRef(null);
@@ -58,7 +57,7 @@ const SignUp = () => {
 
   return (
     <>
-    <InfoNav/>
+   
     <div className="signup-container">
       {error && <Alert variant="danger">{error}</Alert>}
       <form onSubmit={handleSubmit}>

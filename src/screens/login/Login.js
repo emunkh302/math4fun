@@ -2,10 +2,7 @@
 import React, { useState, useContext, useRef, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { UserContext } from '../../contexts/user-context/UserContext'; // Adjust path if needed
-import { InputGroup, FormControl, Button, Alert, Container, Row, Col, Card } from 'react-bootstrap'; // Using react-bootstrap
-// You might need a Login.css similar to SignUp.css if you have one
-// import './Login.css'; 
-import InfoNav from '../../components/info-nav/InfoNav'; // Assuming InfoNav is generic
+import { InputGroup, FormControl, Button, Alert, Container, Row, Col, Card } from 'react-bootstrap'; 
 
 const Login = () => {
   const emailRef = useRef(null);
@@ -56,7 +53,7 @@ const Login = () => {
 
   return (
     <>
-      <InfoNav />
+      
       <Container className="d-flex align-items-center justify-content-center" style={{ minHeight: "calc(100vh - 56px)" }}> {/* Adjust minHeight if InfoNav height differs */}
         <Row className="w-100">
           <Col md={{ span: 6, offset: 3 }} lg={{ span: 4, offset: 4 }}>
